@@ -1,0 +1,7 @@
+ ctx.beginPath();  
+            ctx.strokeStyle = "#0000FF";
+            ctx.moveTo(250,710);
+            ctx.lineTo(450,710);
+            ctx.lineCap = 'round';
+            ctx.lineWidth = 40;
+            ctx.stroke();

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#board {
+    background: black;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+	position:relative;
+}
+
+#inf {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: 10;
+    background: rgba(0,0,0,0.8);
+    padding: 0 10px;
+    border-top-right-radius: 10px;
+}
+
+#inf2 {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 10;
+    background: rgba(0,0,0,0.8);
+    padding: 0 10px;
+    border-top-right-radius: 10px;
+}
+
+.ground {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background: gray;
+    border-top: 3px solid #b6b6b6;
+}
+
+.fire{
+	position: absolute;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background: red;
+	-webkit-transition: all 10ms ease;
+	-moz-transition: all 10ms ease;
+	-ms-transition: all 10ms ease;
+	-o-transition: all 10ms ease;
+	transition: all 10ms ease;
+}
+
+.player{
+	position: absolute;
+	width: 40px;
+	height: 10px;
+	background: yellow;
+	-webkit-transition: all 60ms ease;
+	-moz-transition: all 60ms ease;
+	-ms-transition: all 60ms ease;
+	-o-transition: all 60ms ease;
+	transition: all 60ms ease;
+}
+
+.power {
+    margin: 0 auto;
+    width: 0%;
+    height: 100%;
+    background: red;
+    display: inherit;
+	-webkit-transition: all 100ms ease;
+	-moz-transition: all 100ms ease;
+	-ms-transition: all 100ms ease;
+	-o-transition: all 100ms ease;
+	transition: all 100ms ease;
+}
+
+#player1{
+	left: 375px;
+	top: 357px;
+}
+
+#player2{
+	left: 700px;
+	top: 357px;
+}
