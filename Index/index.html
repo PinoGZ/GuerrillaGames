@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>GuerrillaGames</title>
 </head>
+
 <body>
     <nav>
         <div class="fullhead">
@@ -31,66 +32,219 @@
         </div>
     </header>
     <section class="parent">
+        <h2>Featured Games</h2>
+
+        <div class="slider">
+            <input type="radio" name="testimonial" id="t-1" />
+            <input type="radio" name="testimonial" id="t-2" />
+            <input type="radio" name="testimonial" id="t-3" checked />
+            <input type="radio" name="testimonial" id="t-4" />
+            <input type="radio" name="testimonial" id="t-5" />
+            <div class="testimonials mb-8">
+              <label class="item" for="t-1">
+                <div class="mycard">
+                  <p class="cardtitle">Billard</p>
+                  <div>
+                    <img src="./media/billiardport.jpg" alt="nivel5" class="cardimg" />
+                  </div>
+                  <div>
+                    <p class="carddescription">Preciso, rápido y lleno de diversión. ¡La magia de taco de bar al alcance de tu raton!</p>
+                  </div>
+                </div>
+              </label>
+              <label class="item" for="t-2">
+                <div class="mycard">
+                  <p class="cardtitle">Pong</p>
+                  <div>
+                    <img src="./media/pongport.jpg" alt="nivel5" class="cardimg" />
+                  </div>
+                  <div>
+                    <p class="carddescription">Clásico Pong en nuestra arcade web: ¡simple, emocionante y listo para la acción! Sumérgete en la diversión atemporal y prueba tus reflejos en esta obra maestra retro.</p>
+                  </div>
+                </div>
+              </label>
+              <label class="item" for="t-3">
+                <div class="mycard">
+                  <p class="cardtitle">Tanks</p>
+                  <div>
+                    <img src="./media/tankport.jpg" alt="nivel5" class="cardimg" />
+                  </div>
+                  <div>
+                    <p class="carddescription">Poner en práctica los conocimientos adquiridos.</p>
+                  </div>
+                </div>
+              </label>
+              <label class="item" for="t-4">
+                <div class="mycard">
+                  <p class="cardtitle">Práctica</p>
+                  <div>
+                    <img src="" alt="nivel5" class="cardimg" />
+                  </div>
+                  <div>
+                    <p class="carddescription">Poner en práctica los conocimientos adquiridos.</p>
+                  </div>
+                </div>
+              </label>
+              <label class="item" for="t-5">
+                <div class="mycard">
+                  <p class="cardtitle">Práctica</p>
+                  <div>
+                    <img src="" alt="nivel5" class="cardimg" />
+                  </div>
+                  <div>
+                    <p class="carddescription">Poner en práctica los conocimientos adquiridos.</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="dots">
+              <label for="t-1"></label>
+              <label for="t-2"></label>
+              <label for="t-3"></label>
+              <label for="t-4"></label>
+              <label for="t-5"></label>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="container">
-            <h2>Featured Games</h2>
+
             <div class="game-card">
-                <img src="./media/billiardport.jpg">
+                <div class="game-logo"><img src="./media/billiardport.jpg"></div>
+                <div class="game-name"></div>
                 <h3>Billiard</h3>
-                <p>Preciso, rápido y lleno de diversión. ¡La magia de taco de bar al alcance de tu raton!</p>
-                <a class="bn39" href="./games/billar/html/billiard.html"><span class="bn39span">Button</span></a>
             </div>
-            <div class="game-card">
-                <img src="./media/pongport.jpg">
+            <div class="game-desc"></div>
+            <p>Preciso, rápido y lleno de diversión. ¡La magia de taco de bar al alcance de tu raton!</p>
+            <a href="./games/billar/html/billiard.html"><span class="comic-button">Button</span></a>
+        </div>
+        </div>
+
+        <div class="game-card">
+            <div class="game-logo"><img src="./media/pongport.jpg"></div>
+            <div class="game-name">
                 <h3>Pong</h3>
-                <p>Clásico Pong en nuestra arcade web: ¡simple, emocionante y listo para la acción! Sumérgete en la
+            </div>
+            <div class="game-desc">
+                <p>Clásico Pong en nuestra arcade web: ¡simple, emocionante y listo para la acción! Sumérgete en
+                    la
                     diversión atemporal y prueba tus reflejos en esta obra maestra retro.</p>
-                <a class="bn39" href="./games/pong/pong.html"><span class="bn39span">Button</span></a>
+                <a href="./games/pong/pong.html"><span class="comic-button">Button</span></a>
             </div>
-            <div class="game-card">
+        </div>
+
+        <div class="game-card">
+            <div class="game-logo"><img src="./media/tankport.jpg"></div>
+            <div class="game-name">
                 <h3>Tanks</h3>
-                <p>Desafía a tus amigos en nuestro juego de tanques 1 vs 1! Mejora, domina y ¡sé el rey del campo de
+            </div>
+            <div class="game-desc">
+                <p>Desafía a tus amigos en nuestro juego de tanques 1 vs 1! Mejora, domina y ¡sé el rey del
+                    campo de
                     batalla! ¿Listo para la acción?</p>
-                <a class="bn39" href="./games/tanque/tank.html"><span class="bn39span">Button</span></a>
+                <a href="./games/tanque/tank.html"><button class="comic-button">Play!</button></a>
             </div>
-            <div class="game-card">
-                <img src="./media/">
+        </div>
+
+        <div class="game-card">
+            <div class="game-logo"><img src="./media/"></div>
+            <div class="game-name">
                 <h3>Monigote</h3>
+            </div>
+            <div class="game-desc">
                 <p>Diviertete con el monigote moviendo sus brazos</p>
-                <a class="bn39" href="./games/monigote/monigote.html"><span class="bn39span">Button</span></a>
+                <a class="bn39" href="./games/monigote/monigote.html"><button class="comic-button">Play!</button></a>
             </div>
-            <div class="game-card">
-                <img src="./media/">
+        </div>
+
+        <div class="game-card">
+            <div class="game-logo"><img src="./media/"></div>
+            <div class="game-name">
                 <h3>Game 1</h3>
-                <p>Description of Game 1.</p>
-                <a class="bn39" href="./games/circulo/circulo.html"><span class="bn39span">Button</span></a>
             </div>
-            <div class="game-card">
-                <img src="./media/">
-                <h3>Game 1</h3>
+            <div class="game-desc">
                 <p>Description of Game 1.</p>
-                <a class="bn39" href="/"><span class="bn39span">Button</span></a>
+                <a href="./games/circulo/circulo.html"><button class="comic-button">Play!</button></a>
             </div>
-            <div class="game-card">
-                <img src="./media/">
-                <h3>Game 1</h3>
-                <p>Description of Game 1.</p>
-                <a class="bn39" href="/"><span class="bn39span">Button</span></a>
-            </div>
-            <div class="game-card">
-                <img src="./media/">
-                <h3>Game 1</h3>
-                <p>Description of Game 1.</p>
-                <a href="#" class="play-button">Play Now</a>
-            </div>
-            <div class="game-card">
-                <img src="./media/">
-                <h3>Game 1</h3>
-                <p>Description of Game 1.</p>
-                <a href="#" class="play-button">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-logo"><img src="./media/">
+                <div class="game-name">
+                    <h3>Game 1</h3>
+                </div>
+                <div class="game-desc">
+                    <p>Description of Game 1.</p>
+                    <a href="/"><button class="comic-button">Play!</button></a>
+                </div>
             </div>
 
+            <div class="game-card">
+                <div class="game-logo"><img src="./media/"></div>
+                <div class="game-name">
+                    <h3>Game 1</h3>
+                </div>
+                <div class="game-desc">
+                    <p>Description of Game 1.</p>
+                    <a href="/"><button class="comic-button">Play!</button></a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-logo"><img src="./media/"></div>
+                <div class="game-name">
+                    <h3>Game 1</h3>
+                </div>
+                <div class="game-desc">
+                    <p>Description of Game 1.</p>
+                    <a href="#" class="play-button">Play Now</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-logo"><img src="./media/"></div>
+                <div class="game-name">
+                    <h3>Game 1</h3>
+                </div>
+                <div class="game-desc">
+                    <p>Description of Game 1.</p>
+                    <a href="#" class="play-button">Play Now</a>
+                </div>
+            </div>
         </div>
         </div>
+        </div>
+    </section>
     </section>
 </body>
 <script src="./js/main.js"></script>
