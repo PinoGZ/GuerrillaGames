@@ -1,56 +1,58 @@
-GuerrillaGames Web App
+# GuerrillaGames Web App
 
-Welcome to GuerrillaGames, your go-to destination for a diverse collection of fun and engaging online games. Take a break from the ordinary and immerse yourself in our carefully crafted gaming experiences. Here's a quick overview of what GuerrillaGames has to offer:
-Navigation
+Welcome to **GuerrillaGames**, your go-to destination for a diverse collection of fun and engaging online games. Take a break from the ordinary and immerse yourself in our carefully crafted gaming experiences. Here's a quick overview of what GuerrillaGames has to offer:
 
-    Home: Explore our homepage for the latest updates and features.
-    Games: Dive into a variety of featured games, each offering a unique gaming experience.
-    Contact: Reach out to us if you have any questions, feedback, or inquiries.
+## Navigation
 
-Featured Games
-1. Billiard
+- **Home**: Explore our homepage for the latest updates and features.
+- **Games**: Dive into a variety of featured games, each offering a unique gaming experience.
+- **Contact**: Reach out to us if you have any questions, feedback, or inquiries.
 
-Billiard
-Ready to break? Experience the precision and speed of barroom pool right from your browser.
+## Featured Games
 
-Play Billiard
-2. Pong
+### 1. Billiard
+![Billiard](./media/billiardport.jpg)
+*Ready to break? Experience the precision and speed of barroom pool right from your browser.*
 
-Pong
-Classic Pong fun. Bounce, score, and enjoy the timeless excitement of this retro masterpiece.
+[Play Billiard](./games/billar/html/billiard.html)
 
-Play Pong
-3. Tanks
+### 2. Pong
+![Pong](./media/pongport.jpg)
+*Classic Pong fun. Bounce, score, and enjoy the timeless excitement of this retro masterpiece.*
 
-Tanks
-Command, dodge, conquer! Engage in thrilling tank battles and emerge as the battlefield king.
+[Play Pong](./games/pong/pong.html)
 
-Play Tanks
-4. Monigote
+### 3. Tanks
+![Tanks](./media/tankport.jpg)
+*Command, dodge, conquer! Engage in thrilling tank battles and emerge as the battlefield king.*
 
-Monigote
-Master stickman fun! Have a blast moving the stickman's arms and enjoy the playful experience.
+[Play Tanks](./games/tanque/tank.html)
 
-Play Monigote
-5. Circle
+### 4. Monigote
+![Monigote](./media/sitckmanport.jpg)
+*Master stickman fun! Have a blast moving the stickman's arms and enjoy the playful experience.*
 
-Circle
-Spin, dodge, and set records in our whirlwind circle game. Can you handle the challenge?
+[Play Monigote](./games/monigote/monigote.html)
 
-Play Circle
-6. Práctica
+### 5. Circle
+![Circle](./media/circleport.jpg)
+*Spin, dodge, and set records in our whirlwind circle game. Can you handle the challenge?*
 
-Práctica
-Spin, dodge, and set records in our whirlwind circle game. More challenges await!
+[Play Circle](./games/circulo/circulo.html)
 
-Play Práctica
-7. Upcoming Game
+### 6. Práctica
+![Práctica](./media/circleport.jpg)
+*Spin, dodge, and set records in our whirlwind circle game. More challenges await!*
 
-Upcoming Game
-Exciting new game coming soon! Stay tuned for more details.
+[Play Práctica](./games/faro/faroSeoane/faro.html)
 
-Explore More Games
-About GuerrillaGames
+### 7. Upcoming Game
+![Upcoming Game](./media/circleport.jpg)
+*Exciting new game coming soon! Stay tuned for more details.*
+
+[Explore More Games](#)
+
+## About GuerrillaGames
 
 At GuerrillaGames, we are dedicated to creating memorable and enjoyable gaming experiences. Our team of passionate developers takes pride in delivering games that captivate and entertain. Whether you're a casual gamer or a seasoned pro, there's something for everyone at GuerrillaGames.
 
