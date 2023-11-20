@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'GG';
+  src: url('./fonts/Military\ Poster.ttf') format('ttf');
+}
+
+
+.html {
+  scroll-behavior: smooth;
+}
+
 nav {
+  
   background-color: #131415;
   padding: 10px;
   text-align: center;
@@ -15,20 +26,22 @@ nav .fullhead {
 }
 nav .logo {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos dentro de la sección del logo */
+  align-items: center;
 }
 
 nav .logo img {
-  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-right: 10px;
 }
 
 nav h1 {
+  font-family: "GG";
   margin: 10px 0;
   font-size: 1.5em;
   color: #e19962;
 }
 
 nav p {
+  font-family: "GG";
   font-size: 0.8em;
 }
 
@@ -48,6 +61,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  font-family: "GG", sans-serif;
   color: #8bb7ab;
   font-size: 1.2em;
   transition: color 0.3s ease;
@@ -62,14 +76,14 @@ nav a:hover {
 }
 
 body {
-  background-color: #000000;
+  background-color: #131415;
   color: #e19962;
-  font-family: "Arial", sans-serif;
+  font-family: "GG", sans-serif;
+  font-size: large;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
+  margin: 20px;
   grid-area: 1 / 1 / 8 / 2;
   background-color: #242424;
   padding: 10px;
@@ -79,14 +93,17 @@ body {
 }
 
 .hero {
-  background-color: #1f1f1f;
+  background-color: #131415;
   color: #e19962;
   padding: 60px 0;
   text-align: center;
+  margin: auto;
 }
 
 .parent {
-  background-color: #131415;
+  margin: 20px;
+  background-color: #242424;
+  border-radius: 30px;
   color: #e19962;
   padding: 40px 0;
   text-align: center;
@@ -95,6 +112,7 @@ body {
   grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 3px;
+  height: 700px;
 }
 
 .game-card h3 {
@@ -139,7 +157,7 @@ body {
 }
 
 .game-card {
-  background-color: #242424;
+  background-color: #2e2e2e;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -148,13 +166,13 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  -webkit-appearance: none; /* Override default CSS styles */
+  -webkit-appearance: none;
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  outline: none; /* Remove outline */
+  width: 100%;
+  height: 25px;
+  outline: none;
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -172,9 +190,8 @@ body {
   grid-area: 2 / 2 / 3 / 6;
 }
 
-/* Mouse-over effects */
 .game-card:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
 }
 
 .mycard {
@@ -202,11 +219,9 @@ body {
   text-align: center;
 }
 
-
 .slider {
   width: 100%;
-
-  min-height: 385px;
+  height: 10px;
 }
 .slider input {
   display: none;
@@ -216,7 +231,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 375px;
+  height: 450px;
   perspective: 500px;
   margin-top: 5rem;
   overflow: hidden;
@@ -230,23 +245,25 @@ body {
   top: 0;
   position: absolute;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #2e2e2e;
   padding: 30px;
   width: 450px;
   text-align: center;
-  transition: transform 0.4s;
+  transition: 0.4s;
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   user-select: none;
   cursor: pointer;
 }
 .testimonials .item img {
   width: 100px;
   border-radius: 50%;
-  border: 13px solid #3b344d;
+  border: 13px solid #4e6660;
 }
 .testimonials .item p {
-  color: #ddd;
+  color: #e19962;
+  text-emphasis: bold;
 }
 .testimonials .item h2 {
   font-size: 14px;

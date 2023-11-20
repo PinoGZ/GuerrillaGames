@@ -1,94 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+canvas {
+    background: #eee;
+  }
 
 body{
-	margin:0px;
-	font-family: 'Montserrat', sans-serif;
+    background-color: #242424;
 }
 
-#board {
-    background: black;
-    width: 800px;
-    height: 400px;
-    margin: 10px auto;
-	position:relative;
-}
 
-#inf {
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    z-index: 10;
-    background: rgba(0,0,0,0.8);
-    padding: 0 10px;
-    border-top-right-radius: 10px;
-}
+/* Simple JS game I've been developping in my free time at work, using canvas. Infrequent updates, given that I'm developping it in my free time at work :) */
 
-#inf2 {
-    color: white;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    z-index: 10;
-    background: rgba(0,0,0,0.8);
-    padding: 0 10px;
-    border-top-right-radius: 10px;
-}
 
-.ground {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    background: gray;
-    border-top: 3px solid #b6b6b6;
-}
+/* TO DO:
 
-.fire{
-	position: absolute;
-	width:10px;
-	height:10px;
-	border-radius:50%;
-	background: red;
-	-webkit-transition: all 10ms ease;
-	-moz-transition: all 10ms ease;
-	-ms-transition: all 10ms ease;
-	-o-transition: all 10ms ease;
-	transition: all 10ms ease;
-}
+Development wise: 1) monster-tank collision detection loop => game over. implement lives
 
-.player{
-	position: absolute;
-	width: 40px;
-	height: 10px;
-	background: yellow;
-	-webkit-transition: all 60ms ease;
-	-moz-transition: all 60ms ease;
-	-ms-transition: all 60ms ease;
-	-o-transition: all 60ms ease;
-	transition: all 60ms ease;
-}
+Bugs:
+1) the firing ball goes through the blocks 
 
-.power {
-    margin: 0 auto;
-    width: 0%;
-    height: 100%;
-    background: red;
-    display: inherit;
-	-webkit-transition: all 100ms ease;
-	-moz-transition: all 100ms ease;
-	-ms-transition: all 100ms ease;
-	-o-transition: all 100ms ease;
-	transition: all 100ms ease;
-}
+2) the blocks come in groups of three that are too far apart => make it more smooth and regular
 
-#player1{
-	left: 375px;
-	top: 357px;
-}
+3) Currently, if the tank touches the blocks sideways and not head first => game over. Maybe better to just stop the tank from moving further along sideways (& game over only if head-first collision)?
 
-#player2{
-	left: 700px;
-	top: 357px;
-}
+*/
+
+
