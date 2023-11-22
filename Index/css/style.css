@@ -1,9 +1,10 @@
 @font-face {
   font-family: "GG";
-  src: url("./fonts/Military\ Poster.ttf") format("ttf");
+  src: url("./fonts/ChakraPetch-Italic.ttf") format("ttf");
 }
 
 .html {
+
   scroll-behavior: smooth;
 }
 
@@ -111,6 +112,7 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 3px;
   height: 700px;
+  width: 100%;
 }
 
 .game-card h3 {
@@ -154,26 +156,6 @@ body {
   position: relative(1, 2);
 }
 
-.game-card {
-  background-color: #2e2e2e;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 25px;
-  outline: none;
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 .game-logo {
   grid-area: 1 / 1 / 3 / 2;
 }
@@ -208,7 +190,7 @@ body {
   margin-right: auto;
   margin-top: 2.75rem;
   margin-bottom: 2.75rem;
-  max-height: 6rem;
+  max-height: 8rem;
   border-radius: 9999px;
 }
 .carddescription {
@@ -222,9 +204,15 @@ body {
   height: 10px;
 }
 .slider input {
-  display: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 500px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
-.testimonials {
+.fgames {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,7 +222,7 @@ body {
   margin-top: 5rem;
   overflow: hidden;
 }
-.testimonials .item {
+.fgames .item {
   max-width: 20rem;
   border-radius: 1.5rem;
   border-width: 2px;
@@ -254,16 +242,16 @@ body {
   user-select: none;
   cursor: pointer;
 }
-.testimonials .item img {
+.fgames .item img {
   width: 100px;
   border-radius: 50%;
   border: 13px solid #4e6660;
 }
-.testimonials .item p {
+.fgames .item p {
   color: #e19962;
   text-emphasis: bold;
 }
-.testimonials .item h2 {
+.fgames .item h2 {
   font-size: 14px;
 }
 .dots {
@@ -281,7 +269,6 @@ body {
   margin: 7px;
   transition: transform 0.2s, color 0.2s;
 }
-
 /* First */
 #t-1:checked ~ .dots label[for="t-1"] {
   transform: scale(2);
@@ -290,24 +277,32 @@ body {
 #t-1:checked ~ .dots label[for="t-2"] {
   transform: scale(1.5);
 }
-#t-1:checked ~ .testimonials label[for="t-1"] {
+#t-1:checked ~ .fgames label[for="t-1"] {
+  z-index: 6;
+}
+#t-1:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
+  z-index: 5;
+}
+#t-1:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(600px) translateY(-30px) translateZ(-180px);
   z-index: 4;
 }
-#t-1:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(300px) translateZ(-90px) translateY(-15px);
-
+#t-1:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(900px) translateY(-45px) translateZ(-270px);
   z-index: 3;
 }
-#t-1:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(600px) translateZ(-180px) translateY(-30px);
+#t-1:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(1200px) translateY(-60px) translateZ(-360px);
   z-index: 2;
 }
-#t-1:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(900px) translateZ(-270px) translateY(-45px);
+#t-1:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(1500px) translateY(-75px) translateZ(-450px);
   z-index: 1;
 }
-#t-1:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(1200px) translateZ(-360px) translateY(-60px);
+#t-1:checked ~ .fgames label[for="t-7"] {
+  transform: translateX(1800px) translateY(-90px) translateZ(-540px);
+  z-index: 0;
 }
 
 /* Second */
@@ -321,22 +316,31 @@ body {
 #t-2:checked ~ .dots label[for="t-3"] {
   transform: scale(1.5);
 }
-#t-2:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-2:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
 }
-#t-2:checked ~ .testimonials label[for="t-2"] {
+#t-2:checked ~ .fgames label[for="t-2"] {
+  z-index: 5;
+}
+#t-2:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
+  z-index: 4;
+}
+#t-2:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(600px) translateY(-30px) translateZ(-180px);
   z-index: 3;
 }
-#t-2:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(300px) translateZ(-90px) translateY(-15px);
+#t-2:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(900px) translateY(-45px) translateZ(-270px);
   z-index: 2;
 }
-#t-2:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(600px) translateZ(-180px) translateY(-30px);
+#t-2:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(1200px) translateY(-60px) translateZ(-360px);
   z-index: 1;
 }
-#t-2:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(900px) translateZ(-270px) translateY(-45px);
+#t-2:checked ~ .fgames label[for="t-7"] {
+  transform: translateX(1500px) translateY(-75px) translateZ(-450px);
+  z-index: 0;
 }
 
 /* Third */
@@ -350,21 +354,30 @@ body {
 #t-3:checked ~ .dots label[for="t-4"] {
   transform: scale(1.5);
 }
-#t-3:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-600px) translateZ(-180px) translateY(-30px);
+#t-3:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-600px) translateY(-30px) translateZ(-180px);
 }
-#t-3:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-3:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
 }
-#t-3:checked ~ .testimonials label[for="t-3"] {
+#t-3:checked ~ .fgames label[for="t-3"] {
+  z-index: 4;
+}
+#t-3:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
   z-index: 3;
 }
-#t-3:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(300px) translateZ(-90px) translateY(-15px);
+#t-3:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(600px) translateY(-30px) translateZ(-180px);
   z-index: 2;
 }
-#t-3:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(600px) translateZ(-180px) translateY(-30px);
+#t-3:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(900px) translateY(-45px) translateZ(-270px);
+  z-index: 1;
+}
+#t-3:checked ~ .fgames label[for="t-7"] {
+  transform: translateX(1200px) translateY(-60px) translateZ(-360px);
+  z-index: 0;
 }
 
 /* Fourth */
@@ -378,21 +391,30 @@ body {
 #t-4:checked ~ .dots label[for="t-5"] {
   transform: scale(1.5);
 }
-#t-4:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-900px) translateZ(-270px) translateY(-45px);
+#t-4:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-900px) translateY(-45px) translateZ(-270px);
 }
-#t-4:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(-600px) translateZ(-180px) translateY(-30px);
+#t-4:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(-600px) translateY(-30px) translateZ(-180px);
 }
-#t-4:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-4:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
   z-index: 2;
 }
-#t-4:checked ~ .testimonials label[for="t-4"] {
+#t-4:checked ~ .fgames label[for="t-4"] {
   z-index: 3;
 }
-#t-4:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(300px) translateZ(-90px) translateY(-15px);
+#t-4:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
+  z-index: 2;
+}
+#t-4:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(600px) translateY(-30px) translateZ(-180px);
+  z-index: 1;
+}
+#t-4:checked ~ .fgames label[for="t-7"] {
+  transform: translateX(900px) translateY(-45px) translateZ(-270px);
+  z-index: 0;
 }
 
 /* Fifth */
@@ -403,23 +425,34 @@ body {
   transform: scale(2);
   background-color: #e19962;
 }
-#t-5:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-1200px) translateZ(-360px) translateY(-60px);
+#t-5:checked ~ .dots label[for="t-6"] {
+  transform: scale(1.5);
 }
-#t-5:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(-900px) translateZ(-270px) translateY(-45px);
+#t-5:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-1200px) translateY(-60px) translateZ(-360px);
+}
+#t-5:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(-900px) translateY(-45px) translateZ(-270px);
   z-index: 1;
 }
-#t-5:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(-600px) translateZ(-180px) translateY(-30px);
+#t-5:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(-600px) translateY(-30px) translateZ(-180px);
   z-index: 2;
 }
-#t-5:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-5:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
   z-index: 3;
 }
-#t-5:checked ~ .testimonials label[for="t-5"] {
+#t-5:checked ~ .fgames label[for="t-5"] {
   z-index: 4;
+}
+#t-5:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
+  z-index: 3;
+}
+#t-5:checked ~ .fgames label[for="t-7"] {
+  transform: translateX(600px) translateY(-30px) translateZ(-180px);
+  z-index: 2;
 }
 
 /* Sixth */
@@ -430,28 +463,36 @@ body {
   transform: scale(2);
   background-color: #e19962;
 }
-#t-6:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-1500px) translateZ(-450px) translateY(-75px);
+#t-6:checked ~ .dots label[for="t-7"] {
+  transform: scale(1.5);
 }
-#t-6:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(-1200px) translateZ(-360px) translateY(-60px);
+#t-6:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-1500px) translateY(-75px) translateZ(-450px);
+}
+#t-6:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(-1200px) translateY(-60px) translateZ(-360px);
   z-index: 1;
 }
-#t-6:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(-900px) translateZ(-270px) translateY(-45px);
+#t-6:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(-900px) translateY(-45px) translateZ(-270px);
   z-index: 2;
 }
-#t-6:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(-600px) translateZ(-180px) translateY(-30px);
+#t-6:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(-600px) translateY(-30px) translateZ(-180px);
   z-index: 3;
 }
-#t-6:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-6:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
+  z-index: 3;
+}
+#t-6:checked ~ .fgames label[for="t-6"] {
   z-index: 4;
 }
-#t-6:checked ~ .testimonials label[for="t-6"] {
-  z-index: 5;
+#t-6:checked ~ .fgames label[for="t-7"] {
+  z-index: 3;
+  transform: translateX(300px) translateY(-15px) translateZ(-90px);
 }
+
 
 /* Seventh */
 #t-7:checked ~ .dots label[for="t-6"] {
@@ -461,29 +502,29 @@ body {
   transform: scale(2);
   background-color: #e19962;
 }
-#t-7:checked ~ .testimonials label[for="t-1"] {
-  transform: translateX(-1800px) translateZ(-540px) translateY(-90px);
+#t-7:checked ~ .fgames label[for="t-1"] {
+  transform: translateX(-1800px) translateY(-90px) translateZ(-540px);
 }
-#t-7:checked ~ .testimonials label[for="t-2"] {
-  transform: translateX(-1500px) translateZ(-450px) translateY(-75px);
+#t-7:checked ~ .fgames label[for="t-2"] {
+  transform: translateX(-1500px) translateY(-75px) translateZ(-450px);
   z-index: 1;
 }
-#t-7:checked ~ .testimonials label[for="t-3"] {
-  transform: translateX(-1200px) translateZ(-360px) translateY(-60px);
+#t-7:checked ~ .fgames label[for="t-3"] {
+  transform: translateX(-1200px) translateY(-60px) translateZ(-360px);
   z-index: 2;
 }
-#t-7:checked ~ .testimonials label[for="t-4"] {
-  transform: translateX(-900px) translateZ(-270px) translateY(-45px);
+#t-7:checked ~ .fgames label[for="t-4"] {
+  transform: translateX(-900px) translateY(-45px) translateZ(-270px);
   z-index: 3;
 }
-#t-7:checked ~ .testimonials label[for="t-5"] {
-  transform: translateX(-600px) translateZ(-390px) translateY(-30px);
+#t-7:checked ~ .fgames label[for="t-5"] {
+  transform: translateX(-600px) translateY(-30px) translateZ(-180px);
   z-index: 4;
 }
-#t-7:checked ~ .testimonials label[for="t-6"] {
-  transform: translateX(-300px) translateZ(-90px) translateY(-15px);
+#t-7:checked ~ .fgames label[for="t-6"] {
+  transform: translateX(-300px) translateY(-15px) translateZ(-90px);
   z-index: 5;
 }
-#t-7:checked ~ .testimonials label[for="t-7"] {
+#t-7:checked ~ .fgames label[for="t-7"] {
   z-index: 6;
 }

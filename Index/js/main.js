@@ -1,41 +1,42 @@
-var bg = document.querySelector('.item-bg');
-var items = document.querySelectorAll('.game__item');
-var item = document.querySelector('.game__item');
+var bg = document.querySelector(".item-bg");
+var items = document.querySelectorAll(".game__item");
 
 function cLog(content) {
-    console.log(content)
+  console.log(content);
 }
 
-if($(window).width() > 800) {
-    $(document).on("mouseover", ".game__item", function (_event, _element) {
+if (window.innerWidth > 800) {
+  items.forEach(function (element, index) {
+    element.addEventListener("mouseover", function () {
+      var x = this.getBoundingClientRect().left;
+      var y = this.getBoundingClientRect().top;
+      var width = this.getBoundingClientRect().width;
+      var height = this.getBoundingClientRect().height;
 
-        var newsItem = document.querySelectorAll('.game__item');
-        newsItem.forEach(function (element, index) {
-            element.addEventListener('mouseover', function () {
-                var x = this.getBoundingClientRect().left;
-                var y = this.getBoundingClientRect().top;
-                var width = this.getBoundingClientRect().width;
-                var height = this.getBoundingClientRect().height;
+      // Remueve la clase "active" de todos los elementos con la clase "game__item"
+      items.forEach(function (item) {
+        item.classList.remove("active");
+      });
 
-                $('.item-bg').addClass('active');
-                $('.game__item').removeClass('active');
-               
+      // Añade la clase "active" al elemento actual
+      this.classList.add("active");
 
+      // Añade la clase "active" al elemento con la clase "item-bg"
+      bg.classList.add("active");
 
-                bg.style.width = width + 'px';
-                bg.style.height = height + 'px';
-                bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
-            });
-
-            element.addEventListener('mouseleave', function () {
-                $('.item-bg').removeClass('active');
-                $('.game__item').removeClass('active');
-            });
-
-        });
-
+      bg.style.width = width + "px";
+      bg.style.height = height + "px";
+      bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
     });
+
+    element.addEventListener("mouseleave", function () {
+      // Remueve la clase "active" de todos los elementos con la clase "game__item"
+      items.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      // Remueve la clase "active" del elemento con la clase "item-bg"
+      bg.classList.remove("active");
+    });
+  });
 }
-
-
-
