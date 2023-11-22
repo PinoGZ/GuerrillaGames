@@ -11,7 +11,7 @@ Welcome to **GuerrillaGames**, your go-to destination for a diverse collection o
 ## Featured Games
 
 ### 1. Billiard
-![Billiard](./media/billiardport.jpg)
+![Billiard](index/media/billiardport.jpg)
 *Ready to break? Experience the precision and speed of barroom pool right from your browser.*
 
 [Play Billiard](./games/billar/html/billiard.html)
