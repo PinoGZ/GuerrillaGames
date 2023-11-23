@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "GG";
+  src: url("../games/fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
+}
+
+body {
+  background-color: #131415;
+  font-family: "GG", sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  color: #f38e41;
+}
+
+h2 {
+  color: #e19962;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #3d4131;
+}
+
+ul {
+  margin-bottom: 15px;
+  color: #3d4131;
+}
+
+p:hover {
+  margin-bottom: 15px;
+  color: #939c76;
+}
+
+ul :hover {
+  margin-bottom: 15px;
+  color: #939c76;
+  
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#terms {
+  height: 70%;
+  width: 70%;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 250px;
+  background-color: #1f1f1f;
+  border-radius: 70px;
+}
+
+#terms h2 {
+  margin-left: 20px;
+}
+#terms p {
+  margin-left: 20px;
+}
+#terms ul {
+  margin-left: 20px;
+}
