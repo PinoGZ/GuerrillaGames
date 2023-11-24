@@ -43,22 +43,23 @@ li {
   margin-bottom: 5px;
 }
 
-#terms {
+#points {
+  overflow: scroll;
   height: 70%;
   width: 70%;
   position: fixed;
   margin-top: 150px;
   margin-left: 250px;
   background-color: #1f1f1f;
-  border-radius: 70px;
+  border-radius: 55px;
 }
 
-#terms h2 {
+#points h2 {
   margin-left: 20px;
 }
-#terms p {
-  margin-left: 20px;
+#points p {
+  margin-left: 30px;
 }
-#terms ul {
+#points ul {
   margin-left: 20px;
 }
