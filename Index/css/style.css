@@ -1,10 +1,10 @@
 @font-face {
   font-family: "GG";
-  src: url("./fonts/ChakraPetch-Italic.ttf") format("ttf");
+  src: url("./fonts/ChakraPetch-Italic.woff2") format("woff2"),
+    url("./fonts/ChakraPetch-Italic.woff") format("woff");
 }
 
 .html {
-
   scroll-behavior: smooth;
 }
 
@@ -75,10 +75,9 @@ nav a:hover {
 }
 
 body {
-  background-color: #131415;
-  color: #e19962;
   font-family: "GG", sans-serif;
   font-size: large;
+  background-color: #131415;
 }
 
 .container {
@@ -492,7 +491,6 @@ body {
   z-index: 3;
   transform: translateX(300px) translateY(-15px) translateZ(-90px);
 }
-
 
 /* Seventh */
 #t-7:checked ~ .dots label[for="t-6"] {
