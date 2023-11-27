@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "GG";
-  src: url("./fonts/ChakraPetch-Italic.woff2") format("woff2"),
-    url("./fonts/ChakraPetch-Italic.woff") format("woff");
+  font-family: 'GG';
+  src: url("../games/fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
 }
 
 .html {
@@ -75,7 +74,9 @@ nav a:hover {
 }
 
 body {
-  font-family: "GG", sans-serif;
+  background-color: #131415;
+  color: #e19962;
+  font-family: 'GG', sans-serif;
   font-size: large;
   background-color: #131415;
 }

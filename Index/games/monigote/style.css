@@ -1,4 +1,33 @@
-#monigote{
+@font-face {
+    font-family: 'GG';
+    src: url("../fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
+  }
+#canvas1{
     border: solid 10px rgb(255, 0, 0);
     background :rgb(0, 0, 0);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -400px;
+}
+
+body {
+    background-color: #141513;
+    font-family: "GG";
+}
+
+h1{
+color: #e19962;
+position: fixed;
+top: 250px;
+left: 525px;
+}
+
+
+input #game{
+top: 50px;
+left: 400px;
 }
