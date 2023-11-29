@@ -96,7 +96,6 @@ body {
 
 .parent {
   margin: 20px;
-  background-color: #242424;
   border-radius: 30px;
   color: #e19962;
   padding: 40px 0;
@@ -214,8 +213,9 @@ body {
   position: relative;
   height: 450px;
   perspective: 500px;
-  margin-top: 5rem;
+  margin-top: 1px;
   overflow: hidden;
+  padding: 0%;
 }
 .fgames .item {
   max-width: 20rem;
@@ -232,14 +232,15 @@ body {
   transition: 0.4s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   user-select: none;
   cursor: pointer;
 }
 .fgames .item img {
-  width: 100px;
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
-  border: 13px solid #4e6660;
+  border: 10px solid #8bb7ab;
 }
 .fgames .item p {
   color: #e19962;
@@ -263,6 +264,8 @@ body {
   margin: 7px;
   transition: transform 0.2s, color 0.2s;
 }
+
+/* --------------------------Footer------------------------------ */
 
 .footer{
   width: 100%;
@@ -292,7 +295,7 @@ body {
   color: #e19962;
   list-style: none;
 }
-
+/* --------------------------------------------------------------- */
 
 /* -------------------------------Menu Desplegable------------------ */
 .boton {
@@ -311,10 +314,11 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius:7px;
-	background: #666;
+	background: #242424;
 	margin: 0 auto;
 	padding: 7px;
 	cursor: pointer;
+  border: solid #8bb7ab 3px;
 }
 
 .lineas > div {
@@ -346,7 +350,7 @@ body {
 .boton ul li:first-child {
 	/* DIBUJAMOS EL TRIÁNFULO */
 	border: 20px solid transparent;
-	border-bottom-color:#666;
+	border-bottom-color:#242424;
 	width: 0;
 	position: relative;
 	left: 240px;
@@ -360,12 +364,12 @@ body {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
-	background: #666;
-	border-bottom: 1px solid #dadada
+	background: #242424;
+	border-bottom: 1px solid #131415
 }
 
 .boton ul li a:hover {
-	box-shadow:0 -5px 0 white inset;
+	box-shadow:0 -5px 0 #8bb7ab inset;
   
 }
 
