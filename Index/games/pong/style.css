@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'GG';
+    src: url("../games/fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
+  }
+  
+  #pong {
+    border:2px solid black;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    margin-top: -200px;
+    margin-left: -400px;
+    box-shadow: 0px 0px 10px #000; 
+}
+body {
+    background-color: #141513;
+    font-family: "GG";
+}
+#footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    margin: 5px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+nav .fullhead {
+    padding: 15px;
+    margin: 15px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    background-color: #131415;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  nav .navbar {
+    padding: 20px;
+  }
+
+  nav {
+    background-color: #131415;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .fullhead {
+    padding: 15px;
+    margin: 15px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo img {
+    margin-right: 10px;
+  }
+  
+  nav h1 {
+    font-family: "GG";
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #e19962;
+  }
+  
+  nav p {
+    font-family: "GG";
+    font-size: 0.8em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 15px;
+    margin: 15px;
+    background-color: #242424;
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: "GG", sans-serif;
+    color: #8bb7ab;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav .navbar {
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    color: #e19962;
+  }
+  
+  
+.footer{
+    width: 100%;
+    margin: 20px;
+    background-color: #242424;
+    text-align: center;
+    border-radius: 20px;
+  
+  }
+  
+  .footer-section{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-cus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: 0px;
+  }
+  
+  .footer-links ul{
+    text-decoration: none;
+    color: #e19962;
+    list-style: none;
+  }
