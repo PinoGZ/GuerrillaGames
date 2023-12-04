@@ -10,6 +10,8 @@ var DIRECTION = {
 var rounds = [5, 5, 3, 3, 2];
 var colors = ['#1abc9c', '#2ecc71', '#3498db', '#e74c3c', '#9b59b6'];
 
+
+window.onload
 // The ball object (The cube that bounces back and forth)
 var Ball = {
 	new: function (incrementedSpeed) {

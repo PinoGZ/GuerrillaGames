@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/tarea_2.css">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <h1>titulo</h1>
+    <header>
+    <button class="abrir-menu" ><i class="bi bi-list"></i></button>
+    <nav class="menu">
+        <button class="cerrar-menu"><i class="bi bi-x-circle"></i></button>
+        <ul class="first-menu">
+            <li>pagina1</li>
+            <li>pagina2</li>
+            <li>pagina3</li>
+            <li>pagina3</li>
+        </ul>
+    </nav>
+</header>
+   
+   
+    <p id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam adipisci ipsam iusto,
+        necessitatibus dolorem optio officiis blanditiis rem praesentium fugit dignissimos,
+        libero ipsum esse aspernatur quae autem eaque quo! Modi!</p>
+    <aside>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Maiores, nisi quo repellat impedit obcaecati eos
+            earum unde. Ipsa ducimus error consequuntur qui aut quo aliquid,
+            sapiente, iure odio illo nisi.</p>
+    </aside>
+
+    <footer>
+        <p>asd</p>
+    </footer>
+</body>
+<script>
+    const open = document.getElementsByClassName("abrir-menu");
+    const close = document.getElementsByClassName("cerrar-menu");
+    const nav = document.getElementsByClassName("menu");
+    // añado open[0] y nav[0] porque cojer el elemento por la class name retorna un array y como solo hay uno pues pongo el 0
+    open[0].addEventListener("click",()=>{
+       nav[0].classList.add("visible");
+    });
+
+    close[0].addEventListener("click",()=>{
+       nav[0].classList.remove("visible");
+    });
+
+
+    window.addEventListener("resize", ()=>{
+        if (window.innerWidth > 768) {
+      
+        }
+    });
+</script>
+
+</html>

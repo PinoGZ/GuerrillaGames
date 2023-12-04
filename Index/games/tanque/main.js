@@ -8,7 +8,7 @@ var jugadorY = 0; // Posición Y del jugador
 
 
 window.onload = function () {
-canvas = document.getElementById('canvas1');
+canvas = document.getElementById('game');
 if (canvas) {
   if (canvas.getContext) {
     ctx = canvas.getContext('2d');

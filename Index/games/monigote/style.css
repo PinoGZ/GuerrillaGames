@@ -1,33 +1,237 @@
+/* ------------------------- Fuentes ------------------------- */
 @font-face {
     font-family: 'GG';
     src: url("../fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
   }
-#canvas1{
-    border: solid 10px rgb(255, 0, 0);
-    background :rgb(0, 0, 0);
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    width: 800px;
-    height: 600px;
-    margin-top: -300px;
-    margin-left: -400px;
-}
-
-body {
-    background-color: #141513;
+  
+  /* ------------------------- General HTML ------------------------- */
+  .html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ------------------------- Navegación ------------------------- */
+  nav {
+    background-color: #131415;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .fullhead {
+    padding: 15px;
+    margin: 15px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .logo img {
+    margin-right: 10px;
+  }
+  
+  nav h1 {
     font-family: "GG";
-}
-
-h1{
-color: #e19962;
-position: fixed;
-top: 250px;
-left: 525px;
-}
-
-
-input #game{
-top: 50px;
-left: 400px;
-}
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #e19962;
+  }
+  
+  nav p {
+    font-family: "GG";
+    font-size: 0.8em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 15px;
+    margin: 15px;
+    background-color: #242424;
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: "GG", sans-serif;
+    color: #8bb7ab;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav .navbar {
+    padding: 20px;
+  }
+  
+  nav a:hover {
+    color: #e19962;
+  }
+  
+  /* ------------------------- Cuerpo ------------------------- */
+  body {
+    background-color: #131415;
+    color: #e19962;
+    font-family: 'GG', sans-serif;
+    font-size: large;
+  }
+  
+  .container {
+    margin: 20px;
+    grid-area: 1 / 1 / 8 / 2;
+    background-color: #242424;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .hero {
+    background-color: #131415;
+    color: #e19962;
+    padding: 60px 0;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .parent {
+    margin: 20px;
+      grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 3px;
+    color: #e19962;
+    padding: 40px;
+    text-align: center;
+    display: grid;
+  
+    height: 75px;
+    width: 100%;
+  }
+  /* ------------------------- Footer ------------------------- */
+  .footer {
+  
+    padding: 20px;
+    width: 99%;
+    margin: 20px;
+    background-color: #242424;
+    text-align: center;
+    border-radius: 20px;
+    
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-cus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: 60%;
+    margin-top: 0px;
+  }
+  
+  .footer-links ul {
+    text-decoration: none;
+    color: #e19962;
+    list-style: none;
+  }
+  /* ------------------------- Menu Desplegable ------------------------- */
+  .boton {
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: 15px;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  }
+  
+  .lineas {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  background: #242424;
+  margin: 0 auto;
+  padding: 7px;
+  cursor: pointer;
+  border: solid #8bb7ab 3px;
+  }
+  
+  .lineas > div {
+  height: 5px;
+  width: 100%;
+  background: #e19962;
+  margin: 0 auto;
+  margin-top: 9px;
+  transition: all 1s;
+  }
+  
+  .lineas:hover > div:nth-child(2) {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 9px;
+  }
+  
+  .lineas:hover > div:last-child {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 9px;
+  }
+  
+  .boton ul {
+  height: 0;
+  overflow: hidden;
+  width: 250px;
+  margin-left: -250px;
+  transition: all 1.5s;
+  }
+  
+  .boton ul li:first-child {
+  border: 20px solid transparent;
+  border-bottom-color: #242424;
+  width: 0;
+  position: relative;
+  left: 240px;
+  margin-left: -20px;
+  }
+  
+  .boton ul li a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  color: #e19962;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #242424;
+  border-bottom: 1px solid #131415;
+  }
+  
+  .boton ul li a:hover {
+  box-shadow: 0 -5px 0 #8bb7ab inset;
+  }
+  
+  .boton:hover ul {
+  border-radius: 60px;
+  height: 300px;
+  }
+  
+  /* ------------------------- Canvas ------------------------- */
+  
+  #game{
+  margin-left: 30%;
+  padding: 2%;
+    border-radius: 20px;
+    border: 1px solid #e19962;
+  }

@@ -4,7 +4,7 @@ var ctx
 var canvas
 var animacion
 window.onload = () => {
-    canvas = document.getElementById('canvas1')
+    canvas = document.getElementById('game')
     if (canvas && canvas.getContext) {
         ctx = canvas.getContext('2d')
 
