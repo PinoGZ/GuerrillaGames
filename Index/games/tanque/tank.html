@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Tank</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Billard</title>
 </head>
+
 <body>
-    <body>
-        <nav>
-            <div class="fullhead">
-                <div class="logo">
-                    <img src="../media/Logo.svg" height="200px" width="200px" alt="GuerrillaGames Logo">
-                    <h1>GuerrillaGames</h1>
-                </div>
-    
-                <div class="navbar">
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+    <nav>
+        <div class="fullhead">
+            <div class="logo">
+                <img src="./games/media/Logo.svg" height="200px" width="200px" alt="GuerrillaGames Logo">
+                <h1>GuerrillaGames</h1>
             </div>
-        </nav>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Welcome to GuerrillaGames</h2>
+            <p>Here we take our time coding our games for you to take your time to relax playing them</p>
+        </div>
+    </header>
         <canvas id="pong" width="800" height="800"></canvas>
+        </body>
+        <footer>
         <div class="footer-section">
             <div class="footer-cus">
                 <h3>Contact Us</h3>
@@ -34,8 +44,7 @@
         </div>
         <div class="footer-bottom">
             <p>&copy;Pino 2023 GuerrillaGames.</p>
-        </div>
-        </div>
-    </body>
-</body>
+        </div> 
+        </footer>
+        <script src="./main.js"></script>
 </html>

@@ -1,60 +1,15 @@
-canvas {
-  margin-top: 200px;
-  margin-left: 350px;
-  border: 10px solid gray;
-  background-color: green;
-}
-
+/* ------------------------- Fuentes ------------------------- */
 @font-face {
   font-family: 'GG';
   src: url("../games/fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
 }
 
-#pong {
-  border:2px solid black;
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  width: 800px;
-  height: 600px;
-  margin-top: -200px;
-  margin-left: -400px;
-  box-shadow: 0px 0px 10px #000; 
-}
-body {
-  background-color: #141513;
-  font-family: "GG";
-}
-#footer {
-  position: absolute;
-  bottom: 0px;
-  right: 0%;
-  margin: 5px;
-  font-size: 12px;
-  font-family: sans-serif;
+/* ------------------------- General HTML ------------------------- */
+.html {
+  scroll-behavior: smooth;
 }
 
-nav .fullhead {
-  padding: 15px;
-  margin: 15px;
-  background-color: #1f1f1f;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  background-color: #131415;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-nav .navbar {
-  padding: 20px;
-}
-
+/* ------------------------- Navegación ------------------------- */
 nav {
   background-color: #131415;
   padding: 10px;
@@ -118,22 +73,63 @@ nav a:hover {
   color: #e19962;
 }
 
+/* ------------------------- Cuerpo ------------------------- */
+body {
+  background-color: #131415;
+  color: #e19962;
+  font-family: 'GG', sans-serif;
+  font-size: large;
+}
 
-.footer{
+.container {
+  margin: 20px;
+  grid-area: 1 / 1 / 8 / 2;
+  background-color: #242424;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.hero {
+  background-color: #131415;
+  color: #e19962;
+  padding: 60px 0;
+  text-align: center;
+  margin: auto;
+}
+
+.parent {
+  margin: 20px;
+    grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 3px;
+  color: #e19962;
+  padding: 40px;
+  text-align: center;
+  display: grid;
+
+  height: 75px;
+  width: 100%;
+}
+/* ------------------------- Footer ------------------------- */
+.footer {
+
+  padding: 20px;
   width: 100%;
   margin: 20px;
   background-color: #242424;
   text-align: center;
   border-radius: 20px;
-
+  margin-top: 450px;
 }
 
-.footer-section{
+.footer-section {
   display: flex;
   flex-direction: row;
 }
 
-.footer-cus{
+.footer-cus {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,9 +138,8 @@ nav a:hover {
   margin-top: 0px;
 }
 
-.footer-links ul{
+.footer-links ul {
   text-decoration: none;
   color: #e19962;
   list-style: none;
 }
-

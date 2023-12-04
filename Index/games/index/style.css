@@ -1,7 +1,7 @@
 /* ------------------------- Fuentes ------------------------- */
 @font-face {
   font-family: 'GG';
-  src: url("../games/fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/ChakraPetch-BoldItalic.ttf") format("truetype");
 }
 
 /* ------------------------- General HTML ------------------------- */
@@ -100,16 +100,16 @@ body {
 
 .parent {
   margin: 20px;
-  border-radius: 30px;
-  color: #e19962;
-  padding: 40px 0;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 3px;
-  height: 700px;
+  color: #e19962;
+  padding: 40px;
+  text-align: center;
+  display: grid;
+
+  height: 75px;
   width: 100%;
 }
 
@@ -176,9 +176,10 @@ body {
 }
 
 /* ------------------------- Slider ------------------------- */
-.slider {
+ .slider {
+  margin-top: -225px;
   width: 100%;
-  height: 10px;
+  height: 600px;
 }
 
 .slider input {
@@ -189,7 +190,7 @@ body {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
+} 
 
 /* ------------------------- Juegos ------------------------- */
 .fgames {
@@ -262,11 +263,13 @@ body {
 
 /* ------------------------- Footer ------------------------- */
 .footer {
+  padding: 20px;
   width: 100%;
   margin: 20px;
   background-color: #242424;
   text-align: center;
   border-radius: 20px;
+  margin-top: 450px;
 }
 
 .footer-section {
@@ -287,6 +290,26 @@ body {
   text-decoration: none;
   color: #e19962;
   list-style: none;
+}
+
+.footer {
+  padding: 20px;
+  margin-left: 2%;
+  margin-top: 450px;
+  background-color: #242424;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.footer-bottom{
+  padding-left: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------------------------- Menu Desplegable ------------------------- */
