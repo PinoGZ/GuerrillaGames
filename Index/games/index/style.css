@@ -262,14 +262,15 @@ body {
 }
 
 /* ------------------------- Footer ------------------------- */
+
 .footer {
   padding: 20px;
-  width: 100%;
-  margin: 20px;
+  margin-left: 2%;
+  margin-right: 10px;
+  margin-top: 450px;
   background-color: #242424;
   text-align: center;
   border-radius: 20px;
-  margin-top: 450px;
 }
 
 .footer-section {
@@ -282,7 +283,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 50%;
+  margin-left: 45%;
+  margin-right: 50%;
   margin-top: 0px;
 }
 
@@ -292,14 +294,7 @@ body {
   list-style: none;
 }
 
-.footer {
-  padding: 20px;
-  margin-left: 2%;
-  margin-top: 450px;
-  background-color: #242424;
-  text-align: center;
-  border-radius: 20px;
-}
+
 
 .footer-bottom{
   padding-left: 2%;
@@ -316,13 +311,13 @@ body {
 .boton {
   width: 50px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 0px;
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 10px;
   position: absolute;
   top: 0;
-  left: 90%;
+  left: 95%;
 }
 
 .lineas {
