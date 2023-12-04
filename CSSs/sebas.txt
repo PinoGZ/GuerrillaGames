@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .box {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .box1 {
+    background-color: yellow;
+    top: 0;
+    border: 5px solid black;
+  }
+  
+  .box2 {
+    background-color: red;
+    top: 40px;
+    left: 30px;
+    border: 5px solid black;
+  }
+  
+  .box3 {
+    background-color: blue;
+    top: 80px;
+    left: 60px;
+    border: 5px solid black;
+  }
+
+  .lorem {
+    margin: 5px;
+  }
