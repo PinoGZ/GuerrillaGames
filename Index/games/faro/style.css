@@ -79,6 +79,8 @@
     color: #e19962;
     font-family: 'GG', sans-serif;
     font-size: large;
+    margin: 0;
+              overflow: hidden;
   }
   
   .container {
@@ -234,5 +236,6 @@
   padding: 2%;
     border-radius: 20px;
     border: 1px solid #e19962;
-    background-color: #8bb7ab;
+    background-color: #6dd1d3;
+    display: block;
   }

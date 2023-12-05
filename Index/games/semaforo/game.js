@@ -2,12 +2,13 @@ let context;
 let red = false;
 let yellow = false;
 let green = false;
-window.onload = function () {
-    const canvas = document.getElementById("canvas1");
+
+    const canvas = document.getElementById("game");
     if (canvas && canvas.getContext('2d')) {
         context = canvas.getContext("2d");
         if (context) {
-
+            canvas.width = 800;
+            canvas.height = 600;
             //semaforo
             context.lineJoin = 'round';
             context.strokeStyle = 'black';
@@ -134,5 +135,3 @@ window.onload = function () {
         }
 
     }
-
-}

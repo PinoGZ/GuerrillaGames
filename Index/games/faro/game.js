@@ -1,6 +1,6 @@
 class Canvas {
-  constructor(target) {
-    this.canvas = document.getElementById(target);
+  constructor() {
+    this.canvas = document.getElementById('game');
     this.context = this.canvas.getContext("2d");
     this.canvas.width = 800;
     this.canvas.height = 600;

@@ -10,7 +10,7 @@ var speed = 5;
 
 
 window.onload = function () {
-canvas = document.getElementById("gameCanvas");
+canvas = document.getElementById("game");
 canvas.width = 1000;
 canvas.height = 800
 const speeder = document.createElement('input');
@@ -18,16 +18,7 @@ speeder.value = 5;
 speeder.type = "range";
 speeder.min = 0;
 speeder.max = 10;
-speeder.setAttribute('class', 'slider');
-speeder.setAttribute('id', 'speedRange');
-const text = document.createElement('p');
-text.textContent = 'Velocidad: ';
-const span = document.createElement('span');
-span.setAttribute('id', 'speedValue');
-span.textContent = "5";
-text.appendChild(span);
-document.body.appendChild(text);
-document.body.appendChild(speeder);
+
 
 if (canvas && canvas.getContext) {
   ctx = canvas.getContext("2d");
@@ -50,7 +41,7 @@ function dibujarCirculo(x, y, radio, borderColor, fillStyle) {
   ctx.closePath();
 }
 
-speeder.addEventListener('input', function () {
+speeder.addEventListener('slider', function () {
   speed = parseInt(this.value);
   document.getElementById('speedValue').textContent = speed;
 });

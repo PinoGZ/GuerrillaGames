@@ -79,6 +79,8 @@
     color: #e19962;
     font-family: 'GG', sans-serif;
     font-size: large;
+    margin: 0;
+              overflow: hidden;
   }
   
   .container {
@@ -105,11 +107,10 @@
     grid-column-gap: 0px;
     grid-row-gap: 3px;
     color: #e19962;
-    padding: 40px;
+    padding: 5px;
     text-align: center;
-    display: grid;
-  
-    height: 75px;
+    display: grid;  
+    height: 350px;
     width: 100%;
   }
   /* ------------------------- Footer ------------------------- */
@@ -234,5 +235,8 @@
   padding: 2%;
     border-radius: 20px;
     border: 1px solid #e19962;
-    background-color: #8bb7ab;
+    background-color: #6dd1d3;
+ 
+    display: block;
   }
+
